@@ -1,0 +1,81 @@
+﻿Build started 12.01.2014 20:07:19.
+     1>Project "D:\dev\WhiteboardPhotoConverter\WPCLib\WPCLib.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I..\FreeImage\Source /I. /I..\include /I..\include\leptonica /I"..\tesseract-ocr\include\tesseract" /Zi /nologo /W3 /WX- /Od /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _UNICODE /D UNICODE /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt BinaryBitmap.cpp ChartExporter.cpp Chunk.cpp Contour.cpp Debugger.cpp FreeImageUtils.cpp ImageBinarization.cpp LineRecognizer.cpp Lines.cpp Point.cpp Rect.cpp ShapeMatcher.cpp ShapeRecognizer.cpp Shapes.cpp StringUtils.cpp TextRecognizer.cpp TopologyRecognizer.cpp WhiteboardPhotoConverter.cpp
+         BinaryBitmap.cpp
+         ChartExporter.cpp
+         Chunk.cpp
+         Contour.cpp
+         Debugger.cpp
+         FreeImageUtils.cpp
+         ImageBinarization.cpp
+         LineRecognizer.cpp
+         Lines.cpp
+         Point.cpp
+         Rect.cpp
+         ShapeMatcher.cpp
+         ShapeRecognizer.cpp
+         Shapes.cpp
+     1>Shapes.cpp(249): warning C4244: '=' : conversion from 'const double' to 'int', possible loss of data
+         StringUtils.cpp
+         TextRecognizer.cpp
+     1>d:\dev\whiteboardphotoconverter\include\leptonica\pix.h(169): warning C4305: 'initializing' : truncation from 'double' to 'const l_float32'
+     1>d:\dev\whiteboardphotoconverter\include\leptonica\pix.h(171): warning C4305: 'initializing' : truncation from 'double' to 'const l_float32'
+     1>d:\dev\whiteboardphotoconverter\tesseract-ocr\include\tesseract\platform.h(33): warning C4005: 'snprintf' : macro redefinition
+                 d:\dev\whiteboardphotoconverter\include\leptonica\environ.h(277) : see previous definition of 'snprintf'
+     1>d:\dev\whiteboardphotoconverter\tesseract-ocr\include\tesseract\strngs.h(61): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 11.0\VC\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\dev\whiteboardphotoconverter\tesseract-ocr\include\tesseract\unicharset.h(47): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 11.0\VC\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\dev\whiteboardphotoconverter\tesseract-ocr\include\tesseract\unicharset.h(274): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>d:\dev\whiteboardphotoconverter\tesseract-ocr\include\tesseract\unicharset.h(299): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+         TopologyRecognizer.cpp
+         WhiteboardPhotoConverter.cpp
+     1>d:\dev\whiteboardphotoconverter\include\leptonica\pix.h(169): warning C4305: 'initializing' : truncation from 'double' to 'const l_float32'
+     1>d:\dev\whiteboardphotoconverter\include\leptonica\pix.h(171): warning C4305: 'initializing' : truncation from 'double' to 'const l_float32'
+     1>d:\dev\whiteboardphotoconverter\tesseract-ocr\include\tesseract\platform.h(33): warning C4005: 'snprintf' : macro redefinition
+                 d:\dev\whiteboardphotoconverter\include\leptonica\environ.h(277) : see previous definition of 'snprintf'
+     1>d:\dev\whiteboardphotoconverter\tesseract-ocr\include\tesseract\strngs.h(61): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 11.0\VC\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\dev\whiteboardphotoconverter\tesseract-ocr\include\tesseract\unicharset.h(47): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 11.0\VC\include\string.h(191) : see declaration of 'strncpy'
+     1>d:\dev\whiteboardphotoconverter\tesseract-ocr\include\tesseract\unicharset.h(274): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>d:\dev\whiteboardphotoconverter\tesseract-ocr\include\tesseract\unicharset.h(299): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"D:\dev\WhiteboardPhotoConverter\Release\WPCLib.lib" FreeImage.lib ws2_32.lib user32.lib liblept168d.lib libtesseract302d.lib /LIBPATH:..\lib /LIBPATH:..\FreeImage\Win32\Release /LIBPATH:D:\dev\WhiteboardPhotoConverter\Release\ /NOLOGO /LTCG Release\BinaryBitmap.obj
+         Release\ChartExporter.obj
+         Release\Chunk.obj
+         Release\Contour.obj
+         Release\Debugger.obj
+         Release\FreeImageUtils.obj
+         Release\ImageBinarization.obj
+         Release\LineRecognizer.obj
+         Release\Lines.obj
+         Release\Point.obj
+         Release\QuickUnion.obj
+         Release\Rect.obj
+         Release\ShapeMatcher.obj
+         Release\ShapeRecognizer.obj
+         Release\Shapes.obj
+         Release\StringUtils.obj
+         Release\Chart.obj
+         Release\TextRecognizer.obj
+         Release\TopologyRecognizer.obj
+         Release\WhiteboardPhotoConverter.obj
+     1>ws2_32.lib(WS2_32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in FreeImage.lib(FreeImage.dll); second definition ignored
+     1>user32.lib(USER32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in FreeImage.lib(FreeImage.dll); second definition ignored
+     1>liblept168d.lib(liblept168d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in FreeImage.lib(FreeImage.dll); second definition ignored
+     1>libtesseract302d.lib(libtesseract302d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in FreeImage.lib(FreeImage.dll); second definition ignored
+     1>WhiteboardPhotoConverter.obj : warning LNK4006: "public: __thiscall ERRCODE::ERRCODE(char const *)" (??0ERRCODE@@QAE@PBD@Z) already defined in libtesseract302d.lib(libtesseract302d.dll); second definition ignored
+     1>TextRecognizer.obj : warning LNK4006: "public: int __thiscall tesseract::TessBaseAPI::Init(char const *,char const *)" (?Init@TessBaseAPI@tesseract@@QAEHPBD0@Z) already defined in libtesseract302d.lib(libtesseract302d.dll); second definition ignored
+     1>TextRecognizer.obj : warning LNK4006: "public: __thiscall ERRCODE::ERRCODE(char const *)" (??0ERRCODE@@QAE@PBD@Z) already defined in libtesseract302d.lib(libtesseract302d.dll); second definition ignored
+         WPCLib.vcxproj -> D:\dev\WhiteboardPhotoConverter\Release\WPCLib.lib
+     1>Done Building Project "D:\dev\WhiteboardPhotoConverter\WPCLib\WPCLib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:32.54

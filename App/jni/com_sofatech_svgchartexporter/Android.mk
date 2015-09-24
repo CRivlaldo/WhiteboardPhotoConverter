@@ -1,0 +1,24 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := libSVGChartExporter
+
+BLACKLIST_SRC_FILES := 
+
+SVGCHARTEXPORTER_SRC_FILES :=  $(wildcard $(SVGCHARTEXPORTER_PATH)/src/*.cpp)
+
+LOCAL_SRC_FILES := \
+  $(filter-out $(BLACKLIST_SRC_FILES),$(subst $(LOCAL_PATH)/,,$(SVGCHARTEXPORTER_SRC_FILES)))
+  
+LOCAL_C_INCLUDES := \
+	$(LOCAL_PATH)/src \
+	$(FREEIMAGE_PATH)/Source \
+	$(WHITEBOARDPHOTOCONVERTER_PATH)/src
+	
+LOCAL_CFLAGS := \
+  --std=c++11 \
+  -DUSE_STD_NAMESPACE \
+  -fpermissive
+
+include $(BUILD_STATIC_LIBRARY)

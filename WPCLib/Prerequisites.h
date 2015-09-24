@@ -1,0 +1,34 @@
+#pragma once
+
+//#include <stdlib.h>
+//#include <Windows.h>
+#include <string>
+#include <vector>
+#include <list>
+#include <iostream>
+#include <utility>
+#include <clocale>
+#include <locale>
+#include <algorithm>
+#include <functional> 
+#include <cctype>
+
+#include "Point.h"
+#include "Rect.h"
+#include "StringUtils.h"
+#include "FreeImage.h"
+#include "FreeImageUtils.h"
+#include "BinaryBitmap.h"
+#include "QuickUnion.h"
+#include "Debugger.h"
+#include "Chunk.h"
+#include "Contour.h"
+#include "Shapes.h"
+#include "Lines.h"
+#include "Chart.h"
+#include "ImageBinarization.h"
+#include "ShapeMatcher.h"
+#include "ShapeRecognizer.h"
+#include "LineRecognizer.h"
+#include "TopologyRecognizer.h"
+#include "ChartExporter.h"

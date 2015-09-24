@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C2ABA917-69BB-49D4-83AD-91962C2E7A8B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WPCLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\FreeImage\Source;.;..\include;..\include\leptonica;..\tesseract-ocr\include\tesseract</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>FreeImage.lib;ws2_32.lib;user32.lib;liblept168d.lib;libtesseract302d.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>..\lib;..\FreeImage\Win32\Release;$(SolutionDir)$(Configuration)\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BinaryBitmap.cpp" />
+    <ClCompile Include="ChartExporter.cpp" />
+    <ClCompile Include="Chunk.cpp" />
+    <ClCompile Include="Contour.cpp" />
+    <ClCompile Include="Debugger.cpp" />
+    <ClCompile Include="FreeImageUtils.cpp" />
+    <ClCompile Include="ImageBinarization.cpp" />
+    <ClCompile Include="LineRecognizer.cpp" />
+    <ClCompile Include="Lines.cpp" />
+    <ClCompile Include="Point.cpp" />
+    <ClCompile Include="QuickUnion.cpp" />
+    <ClCompile Include="Rect.cpp" />
+    <ClCompile Include="ShapeMatcher.cpp" />
+    <ClCompile Include="ShapeRecognizer.cpp" />
+    <ClCompile Include="Shapes.cpp" />
+    <ClCompile Include="StringUtils.cpp" />
+    <ClCompile Include="Chart.cpp" />
+    <ClCompile Include="TextRecognizer.cpp" />
+    <ClCompile Include="TopologyRecognizer.cpp" />
+    <ClCompile Include="WhiteboardPhotoConverter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BinaryBitmap.h" />
+    <ClInclude Include="ChartExporter.h" />
+    <ClInclude Include="Chunk.h" />
+    <ClInclude Include="Contour.h" />
+    <ClInclude Include="Debugger.h" />
+    <ClInclude Include="Lines.h" />
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="Prerequisites.h" />
+    <ClInclude Include="Rect.h" />
+    <ClInclude Include="FreeImageUtils.h" />
+    <ClInclude Include="ImageBinarization.h" />
+    <ClInclude Include="LineRecognizer.h" />
+    <ClInclude Include="QuickUnion.h" />
+    <ClInclude Include="ShapeMatcher.h" />
+    <ClInclude Include="ShapeRecognizer.h" />
+    <ClInclude Include="Shapes.h" />
+    <ClInclude Include="StringUtils.h" />
+    <ClInclude Include="Chart.h" />
+    <ClInclude Include="TextRecognizer.h" />
+    <ClInclude Include="TopologyRecognizer.h" />
+    <ClInclude Include="WhiteboardPhotoConverter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FreeImage\Source\FreeImageLib\FreeImageLib.2012.vcxproj">
+      <Project>{9e219df2-315d-478e-8a07-8960c377ce1e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

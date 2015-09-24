@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Whiteboard Photo Converter</string>
+    <string name="info_button">Info</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="takePhoto">Take a photo</string>
+    <string name="pickPhoto">Pick a photo</string>
+    <string name="title_activity_information">InformationActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="webpage_button">Go to webpage</string>
+    <string name="information_content">This app is a prototype of a converter 
+        of whiteboard photos to charts. 
+        The app recognizes text and some figures like rectangles, ellipses and lines.\n\n 
+        But it isn\'t ready yet!\n\n
+        You can take a picture of a whiteboard or pick some photo from your gallery. 
+        Next it will be converted to a chart.\n\n
+        Only SVG is supported as output format in current moment.\n\n
+        Press \'Go to webpage\' button to get more info.\n\n
+        Vladimir Vlasov\n<a href="http://sofatech.wordpress.com">© Sofa Tech</a></string>
+    <string name="webpage_url">http://sofatech.wordpress.com</string>
+    <string name="title_activity_preview_photo">Preview Photo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="buttonConvertText">Convert</string>
+    <string name="buttonCropText">Crop</string>
+    <string name="title_activity_svgviewer">SVG Viewer</string>
+
+</resources>

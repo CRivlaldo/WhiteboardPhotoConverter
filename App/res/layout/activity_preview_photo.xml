@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".PreviewPhotoActivity" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="402dp"
+        android:layout_gravity="top|left|right"
+        android:scaleType="centerInside" />
+
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:text="@string/buttonConvertText" />
+
+    <Button
+        android:id="@+id/buttonCrop"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="@string/buttonCropText" />
+
+</FrameLayout>

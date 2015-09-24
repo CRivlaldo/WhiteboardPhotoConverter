@@ -1,0 +1,37 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := libWhiteboardPhotoConverter
+
+BLACKLIST_SRC_FILES := 
+
+WHITEBOARDPHOTOCONVERTER_SRC_FILES := \
+  $(wildcard $(WHITEBOARDPHOTOCONVERTER_PATH)/src/*.cpp) \
+  $(wildcard $(WHITEBOARDPHOTOCONVERTER_PATH)/*.cpp)
+
+LOCAL_SRC_FILES := \
+  $(filter-out $(BLACKLIST_SRC_FILES),$(subst $(LOCAL_PATH)/,,$(WHITEBOARDPHOTOCONVERTER_SRC_FILES)))
+  
+LOCAL_C_INCLUDES := \
+  	$(LEPTONICA_PATH)/src \
+  	$(LEPTONICA_PATH)/src/src \
+	$(TESSERACT_PATH)/api \
+	$(TESSERACT_PATH)/ccmain \
+	$(TESSERACT_PATH)/ccstruct \
+	$(TESSERACT_PATH)/ccutil \
+	$(FREEIMAGE_PATH)/Source/ \
+	$(WHITEBOARDPHOTOCONVERTER_PATH)/src \
+	$(SVGCHARTEXPORTER_PATH)/src \
+	$(LOCAL_PATH)
+	
+LOCAL_CFLAGS := \
+  -DUSE_STD_NAMESPACE \
+  -fpermissive \
+  -DFREEIMAGE_LIB
+  
+LOCAL_LDLIBS := -llog
+	
+LOCAL_SHARED_LIBRARIES := libleptonica libtesseract libFreeImage libSVGChartExporter
+
+include $(BUILD_SHARED_LIBRARY)
